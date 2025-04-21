@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: "#f97316";
+  --color-secondary: "#64748b";
+}
+@layer components {
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #2f1115);
+    -webkit-filter: drop-shadow(40px 50px 25px hsl(318, 62%, 69%));
+  }
+  .img-shadow-2 {
+    filter: drop-shadow(10px 30px 15px #3030307a);
+    -webkit-filter: drop-shadow(10px 30px 15px #3030307a);
+  }
+}

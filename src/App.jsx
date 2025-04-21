@@ -1,7 +1,12 @@
 import React from "react";
+import Hero from "./components/Hero";
 
 const App = () => {
-  return <div className=" text-5xl text-amber-700">App in work</div>;
+  return (
+    <div className=" overflow-x-hidden">
+      <Hero />
+    </div>
+  );
 };
 
 export default App;
