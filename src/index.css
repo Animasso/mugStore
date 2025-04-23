@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Engagement&family=Fuzzy+Bubbles:wght@400;700&family=Lobster&display=swap");
 @import "tailwindcss";
 
 @theme {
   --color-primary: "#f97316";
   --color-secondary: "#64748b";
+  --font-title: "Fuzzy Bubbles", sans-serif;
 }
+
 @layer components {
   .img-shadow {
     filter: drop-shadow(40px 50px 25px #2f1115);
-    -webkit-filter: drop-shadow(40px 50px 25px hsl(318, 62%, 69%));
+    -webkit-filter: drop-shadow(20px 20px 15px hsl(318, 69%, 84%));
   }
   .img-shadow-2 {
     filter: drop-shadow(10px 30px 15px #3030307a);
