@@ -1,4 +1,5 @@
-import data from "../data/data";
+import { Mugs } from "../data/data";
+import CardMug from "./CardMug";
 
 const Presentation = () => {
   return (
@@ -15,6 +16,16 @@ const Presentation = () => {
           by thousands and recognized as the leading brand in custom mug design,
           CreaMug delivers premium quality and style — one mug at a time */}
         </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-20">
+        {Mugs.map((mug) => (
+          <CardMug
+            key={mug.id}
+            name={mug.name}
+            description={mug.description}
+            image={mug.image}
+          />
+        ))}
       </div>
     </>
   );

@@ -51,7 +51,7 @@ const Hero = () => {
               <img
                 src={mugNeutral}
                 alt="mug"
-                className="relative z-40 h-[300px] md:h-[500px] img-shadow"
+                className="relative z-40 h-[300px] md:h-[400px] img-shadow"
               />
             </div>
 
