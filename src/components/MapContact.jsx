@@ -12,36 +12,41 @@ const MapContact = () => {
     setSend(false);
   };
   return (
-    <div className=" mt-44 bg-white flex  justify-center items-center">
-      <div className=" w-1/3 bg-gray-100 p-4 lg:p-10">
+    <div
+      id="contact"
+      className=" mt-44 bg-white flex  justify-center items-center"
+    >
+      <div className=" w-1/3 bg-gray-900 p-4 lg:p-10 ">
         {send ? (
           <form>
             <div className="flex flex-col items-center justify-center h-screen">
-              <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+              <h2 className="text-2xl font-bold mb-4 text-pink-500 font-title">
+                Contact Us
+              </h2>
               <input
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your Name"
-                className="border border-gray-300 p-2 mb-6 w-72 shadow-2xl  "
+                className="border bg-white border-gray-300 p-2 mb-6 w-72 shadow-2xl  "
               />
               <input
                 type="text"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 placeholder="Your LastName"
-                className="border w-72 shadow-2xl  border-gray-300 p-2 mb-6 "
+                className="border bg-white w-72 shadow-2xl  border-gray-300 p-2 mb-6 "
               />
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your Email"
-                className="border w-72 shadow-2xl  border-gray-300 p-2 mb-6 "
+                className="border bg-white w-72 shadow-2xl  border-gray-300 p-2 mb-6 "
               />
               <textarea
                 placeholder="Any question?"
-                className="border border-gray-300 p-2 mb-4  h-32 w-72 shadow-2xl "
+                className="border bg-white border-gray-300 p-2 mb-4  h-32 w-72 shadow-2xl "
               ></textarea>
               <button
                 onClick={handleSumit}

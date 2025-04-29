@@ -21,9 +21,10 @@ const Hero = () => {
             {/* text content section */}
 
             <div className="text-pink-300 p-4 h-full flex flex-col justify-center space-y-28">
-              <h1 className=" font-thin text-7xl leading-tight ml-14">
-                CreaMug{" "}
+              <h1 className="mt-24 md:mt-36 lg:mt-0 font-thin text-5xl md:text-6xl lg:text-7xl leading-tight ml-8 md:ml-14">
+                CreaMug
               </h1>
+
               <div className=" absolute">
                 <div className=" w-32 h-32 bg-pink-300/15 rounded-full animate-ping"></div>
               </div>
@@ -57,7 +58,7 @@ const Hero = () => {
 
             {/* Third div section  */}
             {/* right text section */}
-            <div className="text-pink-400 p-4 lg:mt-30 lg:ml-5  flex flex-col justify-center items-end space-y-6 text-right max-w-xs">
+            <div className="text-pink-400 ml-14 p-4 lg:mt-30 lg:ml-5  flex flex-col justify-center items-end space-y-6 text-right max-w-xs">
               <h2 className="text-2xl font-bold leading-tight">
                 Stand Out With Every Sip
               </h2>
