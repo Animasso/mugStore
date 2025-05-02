@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MapImage from "../assets/world-map.png";
-
+import { motion } from "framer-motion";
 const MapContact = () => {
   const [send, setSend] = useState(true);
   const [name, setName] = useState("");
@@ -59,22 +59,43 @@ const MapContact = () => {
             </div>
           </form>
         ) : (
-          <div className="text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 0.5 }}
+            className="text-center text-white"
+          >
             <h2 className="text-2xl font-bold mb-4">
-              Thank you for your {name}{" "}
-              <span className="text-pink-600">{lastName}</span> message!
+              Thank you for your message {name}{" "}
+              <span className="text-pink-600">{lastName}</span> !
             </h2>
             <p>
               We will get back to you soon at{" "}
-              <span className="text-pink-600">{email}</span>.
+              <span className="text-pink-600 font-bold">{email}</span>.
             </p>
-          </div>
+          </motion.div>
         )}
       </div>
 
       {/* Image */}
-      <div className="w-full md:w-1/2 lg:w-2/3 flex justify-center items-center">
-        <img
+      <div className="w-full space-y-7 md:w-1/2 lg:w-2/3 flex flex-col  text-2xl justify-center items-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", delay: 1, duration: 1 }}
+          className=" font-title font-bold"
+        >
+          We can send your
+          <span className="text-pink-500 font-bold tracking-wider">
+            {" "}
+            mug
+          </span>{" "}
+          anywhere in the world!{" "}
+        </motion.h2>
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ type: "tween", delay: 1.5 }}
           src={MapImage}
           alt="world map"
           className="h-[250px] md:h-[350px] lg:h-[400px] object-contain"

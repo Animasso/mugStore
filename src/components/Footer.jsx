@@ -9,21 +9,28 @@ const Footer = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="container flex justify-between items-center"
+        className="container "
       >
         {/* logo */}
-        <div className="flex items-center gap-2 text-2xl font-bold uppercase">
-          <img src={logo} alt="logo" className="w-12 h-12 rounded-full ml-2" />
-          <p className=" font-title">CreaMug</p>
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex items-center gap-2 text-2xl font-bold uppercase">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-12 h-12 rounded-full ml-2"
+            />
+            <p className="text-pink-500 font-title">CreaMug</p>
+          </div>
+          {/* social */}
+          <div className="text-pink-500 text-3xl flex items-center ml-4 md:mr-4 gap-4 mt-6">
+            <FaInstagram />
+            <FaFacebookF />
+            <FaTwitter />
+          </div>
         </div>
-        {/* social */}
-        <div className=" text-3xl flex items-center gap-4 mt-6 text-white">
-          <FaInstagram />
-          <FaFacebookF />
-          <FaTwitter />
-        </div>
+
         {/* copyright */}
-        <div className="text-xs text-center mr-3">
+        <div className="text-xs mt-6 self-center text-pink-500 text-center mr-3">
           &copy; 2025 CreaMug. Tous droits réservés.AsidProd
         </div>
       </motion.div>

@@ -1,12 +1,72 @@
-# React + Vite
+# ☕ CreaMug
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**CreaMug** est une plateforme web moderne permettant aux utilisateurs de personnaliser leurs propres mugs en ligne. Le site met en avant des designs originaux, une expérience utilisateur fluide et une interface responsive, le tout avec un style esthétique travaillé.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fonctionnalités
 
-## Expanding the ESLint configuration
+- Page d’accueil avec effet **parallax** et animations visuelles (Framer Motion)
+- Boutons d’appel à l’action (**CTA**) responsives
+- Section de présentation des mugs avec **animation d’apparition décalée**
+- **Composants réutilisables** pour les mugs (`CardMug`)
+- Style responsive pensé pour desktop, tablette et mobile
+- Design épuré avec **Tailwind CSS**
+- Effets visuels comme **ombre sur les éléments**, **animation au scroll**, etc.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies utilisées
+
+| Catégorie       | Outils/Librairies                |
+| --------------- | -------------------------------- |
+| **Frontend**    | React                            |
+| **Styling**     | Tailwind CSS                     |
+| **Animations**  | Framer Motion                    |
+| **Images**      | Assets locaux (mugs, background) |
+| **Déploiement** | Vercel                           |
+
+---
+
+## 📁 Structure des composants
+
+src/ ├── components/ │ ├── Hero.jsx │ ├── Presentation.jsx │ └── CardMug.jsx ├── assets/ │ ├── bg-slate.png │ ├── mugNeutral.jpg │ └── ... autres images ├── data/ │ └── data.js (liste des mugs) └── App.jsx
+
+---
+
+## 🚀 Lancer le projet
+
+````bash
+# Installer les dépendances
+npm install
+
+# Lancer en local
+npm run dev
+📌 À venir
+Intégration d’un outil de personnalisation interactif
+
+Connexion à une base de données (ex: Firebase, Supabase)
+
+Système d’authentification simple
+
+Panier et commande
+
+🧑‍💻 Auteur
+Animasso Sidibé
+Développeur frontend passionné — Portfolio React
+Projet créé pour améliorer la pratique de React, Tailwind et Framer Motion.
+
+
+## 🚀 Lancer le projet en local
+
+```bash
+# Installer les dépendances
+npm install
+
+# Démarrer le serveur de développement
+npm run dev
+👨‍💻 Réalisé par
+Animasso Sidibé
+Développeur Frontend
+Projet personnel conçu pour enrichir mon portfolio avec un site vitrine esthétique et interactif basé sur React, Tailwind CSS et Framer Motion.
+````

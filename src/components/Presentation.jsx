@@ -1,6 +1,8 @@
+import { div } from "framer-motion/client";
 import { Mugs } from "../data/data";
 import CardMug from "./CardMug";
 
+import { motion } from "framer-motion";
 const Presentation = () => {
   return (
     <>
@@ -13,23 +15,28 @@ const Presentation = () => {
         </h2>
         <p className=" text-lg px-6 text-shadow justify-self-center ">
           Whether you're designing for yourself or creating the perfect gift,
-          our platform lets you fully customize every detail.
-          {/* From colors and
-          graphics to personal messages, your creativity is the limit. Trusted
-          by thousands and recognized as the leading brand in custom mug design,
-          CreaMug delivers premium quality and style — one mug at a time */}
+          our platform lets you fully customize every detail. Send us your
+          design and your own mug we will make it a reality.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-20">
-        {Mugs.map((mug) => (
-          <CardMug
+        {Mugs.map((mug, i) => (
+          <motion.div
             key={mug.id}
-            name={mug.name}
-            description={mug.description}
-            image={mug.image}
-          />
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", delay: i * 0.3 }}
+          >
+            <CardMug
+              name={mug.name}
+              description={mug.description}
+              image={mug.image}
+            />
+          </motion.div>
         ))}
       </div>
+
+      <hr className="  w-2/3 mx-auto my-10 h-1 bg-pink-100 rounded-full shadow-lg" />
     </>
   );
 };
