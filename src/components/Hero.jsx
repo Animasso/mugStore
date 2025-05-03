@@ -25,7 +25,8 @@ const Hero = () => {
                 <motion.h1
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ type: "spring", delay: 1 }}
+                  transition={{ type: "spring", delay: 1, duration: 1 }}
+                  id="home"
                   className="mt-24 md:mt-36 lg:mt-0 font-thin text-5xl md:text-6xl lg:text-7xl leading-tight ml-8 md:ml-14"
                 >
                   CreaMug
@@ -54,13 +55,13 @@ const Hero = () => {
 
               {/* CTA bouton */}
               <motion.button
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ type: "spring", delay: 1.5 }}
                 id="products"
                 className="md:hidden mt-10 mx-auto px-6 py-3 bg-pink-500 text-white font-bold rounded-full shadow-lg hover:bg-pink-600 transition-all duration-300"
               >
-                Start Customizing
+                Start Customing
               </motion.button>
             </div>
 
@@ -89,13 +90,13 @@ const Hero = () => {
             </div>
           </div>
           <motion.button
-            initial={{ opacity: 0, x: 150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring" }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "spring", delay: 1 }}
             id="products"
             className=" sticky mb-5 max-md:hidden  left-1/2 transform -translate-x-1/2 px-6 py-3 bg-pink-500 text-white font-bold rounded-full shadow-lg hover:bg-pink-600 transition-all duration-300"
           >
-            Start Customizing
+            Start Customing
           </motion.button>
         </div>
       </section>

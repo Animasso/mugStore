@@ -1,15 +1,11 @@
-import { div } from "framer-motion/client";
 import { Mugs } from "../data/data";
 import CardMug from "./CardMug";
 
 import { motion } from "framer-motion";
 const Presentation = () => {
   return (
-    <>
-      <div
-        id="products"
-        className="  mt-20 justify-center items-center space-y-6 "
-      >
+    <div id="products">
+      <div className="  mt-20 justify-center items-center space-y-6 ">
         <h2 className=" font-title text-2xl text-center items-cente font-bold">
           Fun and <span className=" text-pink-500">Original</span>
         </h2>
@@ -37,7 +33,7 @@ const Presentation = () => {
       </div>
 
       <hr className="  w-2/3 mx-auto my-10 h-1 bg-pink-100 rounded-full shadow-lg" />
-    </>
+    </div>
   );
 };
 
